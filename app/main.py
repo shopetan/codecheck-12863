@@ -17,8 +17,11 @@ def test(argv, options):
     test = format(int(str1),'04b') + format(int(str2),'04b')
     list.append(format(int(str1),'04b') + format(int(str2),'04b'))
     rawstr = "".join(list)
-    rawlist = [rawstr[i: i+6] for i in range(0, len(rawstr), 6)]
-    print rawlist
-    
+  rawlist = [rawstr[i: i+6] for i in range(0, len(rawstr), 6)]
+  print rawlist
+
+  for raw in rawlist:
+    print int(raw)
+    print raw + "A"
       
 test("1Aa","a")
