@@ -21,7 +21,7 @@ def test(argv, options):
   print rawlist
 
   for raw in rawlist:
-    print int(raw)
+    print int(raw,2)
     print raw + "A"
       
 test("1Aa","a")
